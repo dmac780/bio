@@ -177,8 +177,7 @@ cite {
 
 .cta-button {
     display: inline-block;
-    padding: 15px 30px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-align: center;
     text-decoration: none;
@@ -925,6 +924,7 @@ footer a{
     .cta-button, .read-more-btn {
         width: 100%;
         margin-bottom: 10px;
+        font-size: 1rem;
     }
 
     .about-button {
@@ -976,6 +976,11 @@ footer a{
 
     .hero {
         padding: 0 40px;
+        height: 1200px;
+    }
+
+    li{
+        font-size:1rem;
     }
 
 }
