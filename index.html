@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMAC - Edmonton PHP Development</title>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">DMAC</div>
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <nav class="nav" id="nav">
+                <div class="nav-content">
+                    <div class="nav-close" id="nav-close">&times;</div>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="hero">
+        <canvas id="smokeCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Edmonton PHP Developer</h1>
+                <h3>Bridging the gap between PHP and digital marketing. CMS and managed marketing solutions.</h3>
+                <a href="#about" class="cta-button about-button">About DMAC</a>
+                <a href="#portfolio" class="cta-button portfolio-button">Portfolio</a>
+            </div>
+            <div class="hero-image">
+                <img src="uploads/DMAC_LAMP_Server.webp" alt="Hero Image">
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="content-inner">
+		
+            <blockquote id="about">
+                "You can't bite my style, cuz my style ain't a style that is a style, so I can go <strong>buckwild</strong>"
+                <cite>- Craig Mack</cite>
+            </blockquote>
+
+            <h2>A true creative stuck in a complicated world</h2>
+            <p>My name is Daniel, but everyone calls me DMAC. I've been passionate about art my whole life, especially music and digital media. Skateboarding was a huge part of my upbringing, and it gave me a unique perspective on the world, both architecturally and socially. Being immersed in authentic communities naturally led me to 90s hip-hop and record collecting. I fell in love with hip-hop production, spending most of my years honing my skills with the MPC and writing music.</p>
+            <p>Throughout all of this, I've always been deeply engaged in my other interests. I've been involved in competitive esports, ran a lucrative vape coil company, built several custom computers, and developed websites and tools for friends in different walks of life. I like to keep myself busy and love diving deep into competency hierarchies. I'm not someone who can be casual in anything I do.</p>
+
+            <div class="about-image">
+                <img src="uploads/compsand.webp" alt="An antique computer screen monitor buried in sand in the desert in front of oasis ruins filled with brilliant blue water, a vibrant vapor-wave sunset displayed on the dusty screen, creating a striking contrast against the barren scenery.">
+            </div>
+
+            <h3>Crafting digital journeys with purpose</h3>
+            <p>I have over a decade of professional web development experience, specializing in PHP CMS solutions, including Drupal and WordPress development. I have a strong background in backend web development, with expertise in site building, API integrations, and plugin development. My experience spans building custom membership systems, MVC frameworks, developing proprietary CMS functionalities, and retrofitting web properties with enhanced features.</p>
+            <p>As a Google Partner for five years, I solely maintained the annual Google Ads Search, Display, and Video marketing certifications and managed an effective 90-day ad spend of $10,000 USD across various industries with continuous monitoring, reporting, and optimizations towards client goals in several different industries such as higher education, industrial construction, and fine arts to name a few. </p>
+            <p>I also specialize in setting up and optimizing conversion pipelines, GTM tag installation and testing, Google analytics configurations, landing page development, long-term PPC management, and insightful reporting solutions. I have a strong grasp of audience targeting using SEM tools and have successfully implemented SEO strategies based on competitive research, localized search trends, and both on-page and off-page optimizations.</p>
+            <p>I bring experience across the entire digital marketing lifecycle, from gathering requirements and building web solutions to crafting strategies that drive success. My strength lies in helping people turn nothing into something meaningful.</p>
+
+            <h3>I want to work with cool smart people</h3>
+            <p>I am currently seeking part-time or full-time remote work across any industry, but I am also open to hybrid options. I'm not necessarily opposed to roles outside of my current expertise either—working with a marketing agency for a long time across a broad spectrum of industries has really opened my eyes to how the world operates, and has peaked my interest in many ways. I have a passion for teaching what I know, learning from others, and collaborating to create effective solutions to problems.</p>
+
+        </div>
+    </section>
+
+    <section class="portfolio-slider" id="portfolio">
+        <div class="content-inner">
+            <h2>Portfolio</h2>
+            <div class="slider-container">
+                <button class="slider-button prev">&lt;</button>
+                <div class="slider-content">
+
+                    <div class="slider-item">
+                        <div class="portfolio-item" data-project-id="5">
+                            <div class="portfolio-item-image">
+                                <img src="uploads/local488_logo.webp" alt="local488 Brotherhood original logo">
+                            </div>
+                            <div class="portfolio-item-content">
+                                <h4>UA Local Union 488</h4>
+                                <h3>Online Dispatch Portal and Member Management System</h3>
+                                <p><strong>Problem:</strong> The union sought to enhance functionality for member job applications, travel card registrations, and membership verification to improve the online dispatch process.</p>
+                                <p><strong>Solution:</strong> Developed a custom union dispatch system in Drupal 7 with features for member verification, streamlined travel card registration, and automated job posting management.</p>
+                                <p class="tech-stack"><strong>Technology:</strong> Drupal 7, AWS, PHP, JS, XML</p>
+                                <button class="read-more-btn">Read More</button>
+                            </div>
+                            <div class="portfolio-item-details" style="display: none;">
+                                <h4>UA Local Union 488</h4>
+                                <h3>Online Dispatch Portal and Member Management System</h3>
+
+                                <p><strong>Problem:</strong> Local 488 sought to enhance operational efficiency by allowing members, permit holders, and travel card holders to create accounts on their website, local488.ca. This would provide secure access to information from the Union Manager system. However, the existing process lacked secure user authentication and verification based on Union ID or SIN, which was critical for ensuring only eligible users could access job opportunities. Collaboration with Union Manager developers was also needed for integration and authorization.</p>
+ 
+                                <p><strong>Solution:</strong> A custom union dispatch system was developed in Drupal 7, enabling members to securely apply for jobs online. Integration with Local 488's Union Manager software synced user data automatically, while a cron job handled job posting imports and removals. Travel card and permit registration was integrated into the account creation process, with existing data migrated to user profiles. </p>
+                                <p>A custom Drupal module was also created to refine job search filters, giving users more precise control over their job searches. Several administration tools and custom views were developed to support the administration of the ecosystem, streamlining workflows and providing dispatch staff with a more efficient tools to enhance overall operations.</p>
+                                <p><strong>Technology:</strong> Drupal 7, AWS, PHP, JS, XML, Migration</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-item">
+                        <div class="portfolio-item" data-project-id="1">
+                            <div class="portfolio-item-image">
+                                <img src="uploads/camta_logo.webp" alt="Canadian Association of Medical Teams Abroad Logo">
+                            </div>
+                            <div class="portfolio-item-content">
+                                <h4>Canadian Association of Medical Teams Abroad</h4>
+                                <h3>Website Build/Migration, Custom Administration Tools</h3>
+                                <p><strong>Problem:</strong> CAMTA's legacy Adobe ColdFusion website needed a modern refresh with improved user experience and secure document management.</p>
+                                <p><strong>Solution:</strong> Rebuilt the site in WordPress with a custom membership system and secure file storage solution.</p>
+                                <p class="tech-stack"><strong>Technology:</strong> WordPress, PHP, JavaScript, Google Analytics, Google Tag Manager</p>
+                                <button class="read-more-btn">Read More</button>
+                            </div>
+                            <div class="portfolio-item-details" style="display: none;">
+                                <h4>Canadian Association of Medical Teams Abroad</h4>
+                                <h3>Website Build/Migration, Custom Administration Tools</h3>
+                                <p><strong>Problem:</strong> CAMTA's legacy Adobe ColdFusion website, with a proprietary membership system, needed a modern refresh to improve internal user experience, streamline mission registration for medical professionals, and securely manage sensitive documents inside of their CMS without exposing content publicly.</p>
+                                <p><strong>Solution:</strong> Rebuilt the site in WordPress with a custom membership system using ACF, PHP, and JS. Developed a secure solution to store files inside of WordPress, restricting access by user role while preserving default upload functionality. Created custom administration tools to manage users, registrations, and sensitive files. Migrated and mapped data for hundreds of users, each with several datapoints, ensuring accuracy through rigorous testing. Delivered a secure, maintainable platform tailored to CAMTA's needs, all within their charity's budget.</p>
+                                <p><strong>Technology:</strong> WordPress, PHP, JavaScript, Google Analytics, Google Tag Manager</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-item">
+                        <div class="portfolio-item" data-project-id="2">
+                            <div class="portfolio-item-image">
+                                <img src="uploads/portage.png" alt="Portage College Logo">
+                            </div>
+                            <div class="portfolio-item-content">
+                                <h4>Portage College</h4>
+                                <h3>Google Ads PPC Management and Integrated Reporting</h3>
+                                <p><strong>Problem:</strong> Portage College needed to expand online course offerings and increase enrollment in underperforming programs.</p>
+                                <p><strong>Solution:</strong> Implemented Unbounce landing pages, set up Google Tag Manager, and optimized Google Ads campaigns.</p>
+                                <p class="tech-stack"><strong>Technology:</strong> Google Ads, Google Analytics, LookerStudio, Unbounce Landing Pages, Copywriting, Employee Training</p>
+                                <button class="read-more-btn">Read More</button>
+                            </div>
+                            <div class="portfolio-item-details" style="display: none;">
+                                <h4>Portage College</h4>
+                                <h3>Google Ads PPC Management and Integrated Reporting</h3>
+                                <p><strong>Problem:</strong> Portage College sought to expand its online course offerings and increase enrollment in underperforming programs. While they had previously run PPC ads, they lacked a system to track lead form conversions and measure ROI effectively.</p>
+                                <p><strong>Solution:</strong> To bypass limitations with the college's proprietary CMS, Unbounce landing pages were introduced for rapid development. This led to a significant increase in lead form submissions. Two Google Tag Manager containers were set up: one for the main site and another for Unbounce pages. They were configured to track conversions and key user interactions. Goals were synced to Google Analytics and imported into Google Ads for Smart Bidding optimization.</p>               
+                                <p>Comprehensive keyword research informed targeted copy and dynamic ads. This improved relevance, boosted quality scores which reduced CPC and increased the colleges CTR dramatically. Custom landing pages tailored to each program streamlined student inquiries. Ensured resources were effectively targeted by assisting with budgeting and strategically allocating spend to capture relevant traffic. A Looker Studio reporting solution integrated multiple data sources to support informed decision-making for the college's marketing team. Detailed documentation was created to guide future ad content creation and campaign management.</p>
+                                <p><strong>Technology:</strong> Google Ads, Google Analytics, LookerStudio, Unbounce Landing Pages, Copywriting, Employee Training</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-item">
+                        <div class="portfolio-item" data-project-id="3">
+                            <div class="portfolio-item-image">
+                                <img src="uploads/essc-logo.svg" alt="Edmonton Sports and Social Club Logo">
+                            </div>
+                            <div class="portfolio-item-content">
+                                <h4>Edmonton/Calgary Sport and Social Club</h4>
+                                <h3>GA4/GTM Integration for Commerce Reporting</h3>
+                                <p><strong>Problem:</strong> Edmonton/Calgary Sport and Social Club needed to determine ROAS for a summer campaign and track future registrations.</p>
+                                <p><strong>Solution:</strong> Implemented GA4 properties and customized Drupal templates to output relevant checkout data.</p>
+                                <p class="tech-stack"><strong>Technology:</strong> Drupal 7, PHP, JavaScript, Google Tag Manager, Google Universal Analytics / GA4</p>
+                                <button class="read-more-btn">Read More</button>
+                            </div>
+                            <div class="portfolio-item-details" style="display: none;">
+                                <h4>Edmonton/Calgary Sport and Social Club</h4>
+                                <h3>GA4/GTM Integration for Commerce Reporting</h3>
+                                <p><strong>Problem:</strong> Edmonton/Calgary Sport and Social Club needed to determine their ROAS for a summer campaign, as well as track future registrations and analytics through their checkout process and integrated platforms.</p>
+                                <p><strong>Solution:</strong> Connected both websites to GA4 properties and customized the Drupal templates to output relevant data on successful checkouts. The checkout data was sent to the data layer, captured by Google Tag Manager events, and funneled into Google Analytics 4, allowing SSC to accurately calculate their campaign ROAS and track future registration payments through the websites.</p>
+                                <p><strong>Technologies Used:</strong> Drupal 7, PHP, JavaScript, Google Tag Manager, Google Universal Analytics / GA4</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-item">
+                        <div class="portfolio-item" data-project-id="4">
+                            <div class="portfolio-item-image">
+                                <img src="uploads/ESB-Logo.svg" alt="Edmonton School of Ballet Logo">
+                            </div>
+                            <div class="portfolio-item-content">
+                                <h4>Edmonton School of Ballet</h4>
+                                <h3>Website Refresh and Digital Marketing Campaign</h3>
+                                <p><strong>Problem:</strong> Edmonton School of Ballet needed a website refresh and an evergreen landing page for conversion-based campaigns.</p>
+                                <p><strong>Solution:</strong> Designed wireframes, created a WordPress landing page, set up Google Analytics, and managed Google Ads campaigns.</p>
+                                <p class="tech-stack"><strong>Technology:</strong> WordPress, PHP, Adobe XD, Google Analytics, Google Tag Manager, Google Ads</p>
+                                <button class="read-more-btn">Read More</button>
+                            </div>
+                            <div class="portfolio-item-details" style="display: none;">
+                                <h4>Edmonton School of Ballet</h4>
+                                <h3>Website Refresh and Digital Marketing Campaign</h3>
+                                <p><strong>Problem:</strong> Edmonton School of Ballet needed a website refresh along with an evergreen landing page for running conversion-based campaigns year-round, as well as ongoing campaign management.</p>
+                                <p><strong>Solution:</strong> Designed wireframes for the new website experience using Adobe XD. Created and built a landing page in WordPress, set up Google Analytics, and installed Google Tag Manager with relevant event tracking. Imported conversion actions into Google Ads for CPA bidding optimization and managed the ESB Google Ads account for several years.</p>
+                                <p><strong>Technologies Used:</strong> WordPress, PHP, Adobe XD, Google Analytics, Google Tag Manager, Google Ads</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-item">
+                        <div class="portfolio-item" data-project-id="5">
+                            <div class="portfolio-item-image">
+                                <img src="uploads/chemco.webp" alt="Chemco Job Application Portal">
+                            </div>
+                            <div class="portfolio-item-content">
+                                <h4>Chemco</h4>
+                                <h3>Job Application Portal and Website Redesign</h3>
+                                <p><strong>Problem:</strong> Chemco's website needed updating to align with new branding and improve the job application process.</p>
+                                <p><strong>Solution:</strong> Created a WordPress Multisite with a custom career portal and dynamic form solution for job applications.</p>
+                                <p class="tech-stack"><strong>Technology:</strong> WordPress, PHP, AWS, Google Tag Manager, Google Analytics, Social Posting</p>
+                                <button class="read-more-btn">Read More</button>
+                            </div>
+                            <div class="portfolio-item-details" style="display: none;">
+                                <h4>Chemco</h4>
+                                <h3>Job Application Portal and Website Redesign</h3>
+                                <p><strong>Problem:</strong> Chemco's previous website did not align with their updated corporate branding and lacked emphasis on their community, environmental, and employee growth initiatives. Career advertising was manually updated, leading to inefficiencies and technical debt, while different employment areas required unique application forms, which complicated the job posting process.</p>
+                                <p><strong>Solution:</strong> A new WordPress Multisite was created for Chemco and its affiliate organizations, aligning visually with Chemco's updated branding while highlighting their key values. The career portal solution was implemented across all properties within the multisite network. A dedicated content type for career postings was developed, along with a career portal featuring a dynamic filter for active job listings, making it easy for users to search and apply for opportunities online. A dynamic form solution was integrated, allowing post authors to select relevant forms and recipients based on the employment area, simplifying the application process. Additionally, social media sharing was streamlined, with open graph metadata automatically generated for platforms like Facebook and Twitter, enabling seamless sharing through a simple URL paste without the need for extra content creation.</p>
+                                <p><strong>Technologies Used:</strong> WordPress, PHP, AWS, Google Tag Manager, Google Analytics, Social Posting</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="slider-button next">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-slider">
+        <div class="content-inner">
+            <div class="slider-container">
+                <button class="slider-button prev">&lt;</button>
+                <div class="slider-content">
+
+                    <div class="slider-item">
+                        <h4>2011 - 2013</h4>
+                        <h3>Digital Media and Information Technology</h3>
+                        <p>Northern Alberta Institute of Technology (NAIT)</p>
+                        <ul>
+                            <li>DCS - Diploma in Web Application Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="slider-item">
+                        <h4>Oct 2013 - Apr 2014</h4>
+                        <h3>Web App Development Tutor</h3>
+                        <p>Freelance</p>
+                        <ul>
+                            <li>Ran Kijiji ads/listings offering DMIT tutoring for the application development courses I recently finished.</li>
+                            <li>Taught several students C# and ASP.NET Webform basics, stored procedures within SQL Server, CRUD methodology, and help on their final projects.</li>
+                        </ul>
+                    </div>
+
+                    <div class="slider-item">
+                        <h4>Apr 2014 - Nov 2014</h4>
+                        <h3>Web Application Developer</h3>
+                        <p>Simple Connections (www.simpleconnections.ca)</p>
+                        <ul>
+                            <li>Miscellaneous PHP/JS backend bug fixes, and Implementation of automatic updating to MySQL for admin backend form fields via JS/AJAX on the Drayton Valley town website.</li>
+                        </ul>
+                    </div>
+
+                    <div class="slider-item">
+                        <h4>Dec 2014 to Oct 2023</h4>
+                        <h3>Web Developer</h3>
+                        <p>ev+ Agency (www.evhq.ca)</p>
+                        <ul>
+                            <li>Designed, developed, and managed Drupal 7/WordPress websites, PHP web applications, and integrated APIs/payment gateways</li>
+                            <li>Google Partner and PPC specialist, proficient in optimizing Google Ads, CTR, CPA, and executing organic SEO strategies using tools like SEMRush, MOZ, and AHREFS.</li>
+                        </ul>
+                    </div>
+
+                    <div class="slider-item">
+                        <h4>Present</h4>
+                        <h3>Soul Searching</h3 >
+                        <p>Hello World.</p>
+                        <ul>
+                            <li>Revitalized my development approach over the past year by leveraging LLM-powered tools for content creation and web development particularlly with Cursor IDE.</li>
+                            <li>Building my own lightweight SEO-first schema focused CMS monolith with PHP8, JS, MySQL, and Apache.</li>
+                            <li>Took some much needed time off and now i'm looking for a team to work with :)</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <button class="slider-button next">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="credential-section">
+        <div class="content-inner">
+            <div class="credential-container">
+                <div class="credential-image">
+                    <img src="uploads/GAds.png" alt="Credential Badge">
+                </div>
+                <div class="credential-text">
+                    <h4>2018-2024 ev+ Agency</h4>
+                    <h3>Account Strategist</h3>
+                    <p>Maintained the annual performance, spend, and certification requirements to uphold ev+ Agency's Google Partner status.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content dark-text">
+            <span class="close-modal">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <footer class="contact">
+        <canvas id="moving-bg"></canvas>
+        <div class="content-inner">
+            <h3 id="contact">Contact</h3>
+            <p >I don't personally use social media, so you might have a <span class="footerblackout">hard time finding me.</span></p>
+            <p>Built with: CSS, JavaScript, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API" rel="nofollow">Canvas API</a>, and <a href="https://www.cursor.com/" rel="nofollow">Cursor</a>.</p>
+            <p>Assets: <a href="https://labs.google/" rel="nofollow">Google Labs</a>, and <a href="https://rsms.me/inter/" rel="nofollow">Inter</a>.</p>
+            <p>Website @ <a href="https://pages.github.com/" rel="nofollow">Github Pages.</a></p>
+        </div>
+    </footer>
+
+    <!-- Individual JS files so you can look through the functionality if you want --> 
+    <script src="js/particles.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/footer-bg.js"></script>
+    <script src="js/sliders.js"></script>
+
+</body>
+</html>
