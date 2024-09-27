@@ -761,6 +761,7 @@ footer a{
     .hero {
         padding-top: 0;
         padding-bottom: 20px;
+        height: 700px;
     }
 
     .hero-content {

@@ -1,7 +1,7 @@
 const canvas = document.getElementById('smokeCanvas');
 const ctx = canvas.getContext('2d');
 let particles = [];
-let mouse = { x: 0, y: 0 };
+let mouse = { x: -1000, y: -1000, force: 0 };
 
 function resizeCanvas() {
     canvas.width = window.innerWidth;
@@ -17,10 +17,12 @@ function createParticles() {
 }
 
 function createParticle(isInitial = false) {
+    // Adjust particle size based on screen width
+    const sizeMultiplier = Math.min(1, window.innerWidth / 1000);
     return {
         x: Math.random() * canvas.width,
         y: isInitial ? Math.random() * canvas.height : canvas.height + Math.random() * 400,
-        radius: Math.random() * 2 + 0.5,
+        radius: (Math.random() * 2 + 0.5) * sizeMultiplier,
         speed: Math.random() * 0.4 + 0.2,
         opacity: Math.random() * 0.6 + 0.4,
     };
@@ -47,13 +49,13 @@ function drawSmoke() {
         const interactionRadius = 150;
         if (distance < interactionRadius) {
             const angle = Math.atan2(dy, dx);
-            const force = (interactionRadius - distance) / interactionRadius;
+            const force = (interactionRadius - distance) / interactionRadius * mouse.force;
             particle.x -= Math.cos(angle) * force * 10;
             particle.y -= Math.sin(angle) * force * 10;
         }
 
         // Fade particles closer to the top
-        const fadeStart = canvas.height * 0.2; // Start fading at 20% from the top
+        const fadeStart = canvas.height * 0.2;
         if (particle.y < fadeStart) {
             const fadeRatio = particle.y / fadeStart;
             particle.opacity = Math.min(particle.opacity, fadeRatio * 0.6);
@@ -66,6 +68,9 @@ function drawSmoke() {
 
         particle.opacity -= 0.0005;
     });
+
+    // Gradually reduce mouse force
+    mouse.force *= 0.95;
 
     requestAnimationFrame(drawSmoke);
 }
@@ -85,6 +90,23 @@ document.addEventListener('mousemove', (event) => {
     const rect = canvas.getBoundingClientRect();
     mouse.x = event.clientX - rect.left;
     mouse.y = event.clientY - rect.top;
+    mouse.force = 1;
 });
+
+canvas.addEventListener('touchstart', handleTouch);
+canvas.addEventListener('touchmove', handleTouch);
+canvas.addEventListener('touchend', () => {
+    mouse.x = -1000;
+    mouse.y = -1000;
+});
+
+function handleTouch(event) {
+    event.preventDefault();
+    const rect = canvas.getBoundingClientRect();
+    const touch = event.touches[0];
+    mouse.x = touch.clientX - rect.left;
+    mouse.y = touch.clientY - rect.top;
+    mouse.force = 1;
+}
 
 init();
